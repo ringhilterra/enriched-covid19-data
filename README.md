@@ -3,9 +3,9 @@
 Updating repo of latest covid-19 data pulled from Nytimes git repo, enriched with county shapes, county center point coordinates, 2019 census population estimates, cases and deaths per capita, and calculated per day cases and deaths metrics as well.
 
 ## Data Sources
-- covid19 data: https://github.com/nytimes/covid-19-data/
-- county shapes: https://community.esri.com/thread/24614
-- county population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
+- Covid19 data: https://github.com/nytimes/covid-19-data/
+- County shapes: https://community.esri.com/thread/24614
+- County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
 
 
 ## Column Details
