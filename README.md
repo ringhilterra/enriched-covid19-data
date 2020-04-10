@@ -36,3 +36,5 @@ nytimes dataset enriched with county shapes, county center point coordinates, 20
 ## Visualizations and Analysis Examples
 
 [COVID-19 U.S. Time-lapse: Confirmed Cases per County (per capita)](https://www.reddit.com/r/dataisbeautiful/comments/fxqh6u/oc_covid19_us_timelapse_confirmed_cases_per/)
+
+![](examples/covid-cases-final-04-06.gif)
