@@ -19,10 +19,10 @@ Updating repo of latest covid-19 data pulled from Nytimes git repo, enriched wit
 - **deaths**: total confirmed deaths
 - **new_day_cases**: new confirmed cases since the previous day
 - **new_day_deaths**: new confirmed deaths since the previous day
-- **cases_per_capita_1000**: total confirmed cases per capita multiplied by 1000 (multiplied by 1000 so I didn't have to deal with really small decimal numbers)
-- **deaths_per_capita_1000**: total confirmed deaths per capita multiplied by 1000 
-- **new_day_cases_per_capita_1000**: confirmed new day cases per capita multiplied by 1000 
-- **new day_deaths_per_capita_1000**: confirmed new day deaths per capita multiplied by 1000 
+- **cases_per_capita_100k**: total confirmed cases per capita multiplied by 100,000
+- **deaths_per_capita_100k**: total confirmed deaths per capita multiplied by 100,000 
+- **new_day_cases_per_capita_100k**: confirmed new day cases per capita multiplied by 100,000
+- **new day_deaths_per_capita_100k**: confirmed new day deaths per capita multiplied by 100,000
 - **new county_pop_2019_est**: 2019 census county population estimates
 - **new center_point**: centroid center coordinate of the county geometry 
 - **new county_center_lat**: latitude of center_point
