@@ -1,6 +1,6 @@
 # Enriched Covid19 Data
 
-Updating repo of latest covid-19 data pulled from Nytimes git repo, enriched with county shapes, county center point coordinates, 2019 census population estimates, cases and deaths per capita, and calculated per day cases and deaths metrics as well.
+nytimes dataset enriched with county shapes, county center point coordinates, 2019 census population estimates, cases and deaths per capita, and calculated per day cases / deaths metrics.
 
 ## Data Sources
 - Covid19 data: https://github.com/nytimes/covid-19-data/
