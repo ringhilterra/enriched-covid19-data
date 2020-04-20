@@ -2,6 +2,10 @@
 
 nytimes dataset enriched with county shapes, county center point coordinates, 2019 census population estimates, cases and deaths per capita, and calculated per day cases / deaths metrics.
 
+## Files
+- **covid19_us_county.csv:** contains all new yorks times COVID19 data over time per county, joined with population estimates and geospatial info (shapes, lat / lons, etc..). NOTE: This full is really big due to joining the pop. and geo data to every row.
+- **us_county_pop_and_shps.csv:** contains county population estimates and geospatial info. (No COVID-19 related data). This data can be used to join on the COVID19 reported data per county
+
 ## Data Sources
 - Covid19 data: https://github.com/nytimes/covid-19-data/
 - County shapes: https://community.esri.com/thread/24614
