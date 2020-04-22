@@ -1,13 +1,16 @@
+## UPDATE - 4.21
+
+The file structure slightly has changed. **covid19_us_county.csv:** no longer has the geometry information per county in it, the file size was over 100MB due to inefficient repition of geometry for every row. You can do a simply join to the **us_county_pop_and_shps.csv:** file on the fips column if needed.
+
 # Enriched Covid19 Data
 
 nytimes dataset enriched with county shapes, county center point coordinates, 2019 census population estimates, cases and deaths per capita, and calculated per day cases / deaths metrics.
 
 ## Files
-- **covid19_us_county.csv:** contains all new yorks times COVID19 data over time per county, joined with population estimates and geospatial info (shapes, lat / lons, etc..). NOTE: This full is really big due to joining the pop. and geo data to every row.
+- **covid19_us_county.csv:** contains all new yorks times COVID19 data over time per county, including per capita calculations, and population estimates
 
 If you don't care about having all the shape data per county joined to every row in the nytimes data, I included the following as separate files:
 - **us_county_pop_and_shps.csv:** contains county population estimates and geospatial info. (No COVID-19 related data). This data can be used to join on the COVID19 reported data per county. Included since smaller file size
-- **covid119_us_county_no_shps.csv:** same as covid19_us_county.csv except it has the county shape data removed from each column (so smaller file size)
 
 ## Data Sources
 - Covid19 data: https://github.com/nytimes/covid-19-data/
