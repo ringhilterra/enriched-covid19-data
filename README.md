@@ -4,19 +4,13 @@ The file structure slightly has changed. **covid19_us_county.csv:** no longer ha
 
 # Enriched Covid19 Data
 
-nytimes dataset enriched with county shapes, county center point coordinates, 2019 census population estimates, cases and deaths per capita, and calculated per day cases / deaths metrics.
+nytimes dataset enriched with county shapes, county center point coordinates, 2019 census population estimates, county population densities, cases and deaths per capita, and calculated per day cases / deaths metrics.
 
 ## Files
 - **covid19_us_county.csv:** contains all new yorks times COVID19 data over time per county, including per capita calculations, and population estimates
 
 If you don't care about having all the shape data per county joined to every row in the nytimes data, I included the following as separate files:
 - **us_county_pop_and_shps.csv:** contains county population estimates and geospatial info. (No COVID-19 related data). This data can be used to join on the COVID19 reported data per county. Included since smaller file size
-
-## Data Sources
-- Covid19 data: https://github.com/nytimes/covid-19-data/
-- County shapes: https://community.esri.com/thread/24614
-- County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
-
 
 ## Column Details
 - **date**: 
@@ -34,10 +28,17 @@ If you don't care about having all the shape data per county joined to every row
 - **new_day_cases_per_capita_100k**: confirmed new day cases per capita multiplied by 100,000
 - **new day_deaths_per_capita_100k**: confirmed new day deaths per capita multiplied by 100,000
 - **new county_pop_2019_est**: 2019 census county population estimates
+- **'pop_per_sq_mile_2010'**: 2010 census county population density estimates (populate per square mile)
 - **new center_point**: centroid center coordinate of the county geometry 
 - **new county_center_lat**: latitude of center_point
 - **new county_center_lon**: longitude of center_point
 - **new county_geom**: county shape geometry
+
+## Data Sources
+- Covid19 data: https://github.com/nytimes/covid-19-data/
+- County shapes: https://community.esri.com/thread/24614
+- County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
+- County population density (population per square mile): https://github.com/ykzeng/covid-19/tree/master/data
 
 ## Notes
 - Please review nytimes README for detailed notes on Covid-19 data - https://github.com/nytimes/covid-19-data/
