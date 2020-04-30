@@ -2,8 +2,11 @@
 
 nytimes dataset enriched with county shapes, county center point coordinates, 2019 census population estimates, county population densities, cases and deaths per capita, and calculated per day cases / deaths metrics.
 
-## Files
+## Output Files
 - **covid19_us_county.csv:** contains all new yorks times COVID19 data over time per county, including per capita calculations, and population estimates
+
+## Python Notebook
+- **covid_workflow.ipynb** - full workflow of joining different data sources, doing data cleaning, validation, and final file exports
 
 - **us_county_pop_and_shps.csv:** contains county population estimates and geospatial info. (No COVID-19 related data). This data can be used to join on the COVID19 reported data per county. Included since smaller file size
 
