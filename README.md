@@ -7,11 +7,11 @@ nytimes dataset enriched with county shapes, county center point coordinates, 20
 
 - **us_county_pop_and_shps.csv:** contains county population estimates and geospatial info. (No COVID-19 related data). This data can be used to join on the COVID19 reported data per county. Included since smaller file size
 
-## Data Sources
+## Data Sources (Input Data)
 - Covid19 data: https://github.com/nytimes/covid-19-data/
-- County shapes: https://community.esri.com/thread/24614
-- County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
-- County population density (population per square mile): https://github.com/ykzeng/covid-19/tree/master/data
+- **UScounties/** - County shapes: https://community.esri.com/thread/24614
+- **co-est2019-alldata.csv** - County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
+- **census-landarea-all.csv** - County population density (population per square mile): https://github.com/ykzeng/covid-19/tree/master/data
 
 
 ## Column Details
