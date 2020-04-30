@@ -9,9 +9,9 @@ nytimes dataset enriched with county shapes, county center point coordinates, 20
 
 ## Data Sources (Input Data)
 - Covid19 data: https://github.com/nytimes/covid-19-data/
-- **UScounties/** - County shapes: https://community.esri.com/thread/24614
-- **co-est2019-alldata.csv** - County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
-- **census-landarea-all.csv** - County population density (population per square mile): https://github.com/ykzeng/covid-19/tree/master/data
+- **input_data/UScounties/** - County shapes: https://community.esri.com/thread/24614
+- **input_data/co-est2019-alldata.csv** - County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
+- **input_data/census-landarea-all.csv** - County population density (population per square mile): https://github.com/ykzeng/covid-19/tree/master/data
 
 
 ## Column Details
