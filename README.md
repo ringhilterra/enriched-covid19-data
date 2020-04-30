@@ -1,7 +1,3 @@
-## UPDATE - 4.21
-
-The file structure slightly has changed. **covid19_us_county.csv:** no longer has the geometry information per county in it, the file size was over 100MB due to inefficient repition of geometry for every row. You can do a simply join to the **us_county_pop_and_shps.csv:** file on the fips column if needed.
-
 # Enriched Covid19 Data
 
 nytimes dataset enriched with county shapes, county center point coordinates, 2019 census population estimates, county population densities, cases and deaths per capita, and calculated per day cases / deaths metrics.
@@ -10,6 +6,13 @@ nytimes dataset enriched with county shapes, county center point coordinates, 20
 - **covid19_us_county.csv:** contains all new yorks times COVID19 data over time per county, including per capita calculations, and population estimates
 
 - **us_county_pop_and_shps.csv:** contains county population estimates and geospatial info. (No COVID-19 related data). This data can be used to join on the COVID19 reported data per county. Included since smaller file size
+
+## Data Sources
+- Covid19 data: https://github.com/nytimes/covid-19-data/
+- County shapes: https://community.esri.com/thread/24614
+- County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
+- County population density (population per square mile): https://github.com/ykzeng/covid-19/tree/master/data
+
 
 ## Column Details
 - **date**: 
@@ -33,12 +36,6 @@ nytimes dataset enriched with county shapes, county center point coordinates, 20
 - **new county_center_lon**: longitude of center_point
 - **new county_geom**: county shape geometry
 
-## Data Sources
-- Covid19 data: https://github.com/nytimes/covid-19-data/
-- County shapes: https://community.esri.com/thread/24614
-- County population estimates: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/
-- County population density (population per square mile): https://github.com/ykzeng/covid-19/tree/master/data
-
 ## Notes
 - Please review nytimes README for detailed notes on Covid-19 data - https://github.com/nytimes/covid-19-data/
 - The only update I made in regards to 'Geographic Exceptions', is that I took 'New York City' county provided in the Covid-19 data, which has all cases for 'for the five boroughs of New York City (New York, Kings, Queens, Bronx and Richmond counties) and replaced the missing FIPS for those rows with the 'New York County' fips code 36061. That way  I could join to a geometry, and then I used the sum of those five boroughs population estimates for the 'New York City' estimate, which allowed me calculate 'per capita' metrics for  'New York City' entries in the Covid-19 dataset
@@ -48,3 +45,9 @@ nytimes dataset enriched with county shapes, county center point coordinates, 20
 [COVID-19 U.S. Time-lapse: Confirmed Cases per County (per capita)](https://www.reddit.com/r/dataisbeautiful/comments/fxqh6u/oc_covid19_us_timelapse_confirmed_cases_per/)
 
 ![](example_viz/covid-cases-final-04-06.gif)
+
+
+
+## UPDATE - 4.21
+
+The file structure slightly has changed. **covid19_us_county.csv:** no longer has the geometry information per county in it, the file size was over 100MB due to inefficient repition of geometry for every row. You can do a simply join to the **us_county_pop_and_shps.csv:** file on the fips column if needed.
