@@ -3,7 +3,7 @@
 nytimes dataset enriched with county shapes, county center point coordinates, 2019 census population estimates, county population densities, county-level demographic info., cases and deaths per capita, and calculated per day cases / deaths metrics.
 
 See this kaggle notebook for some exploratory data analysis and visualization of this data (updated daily):  
-https://www.kaggle.com/ringhilterra17/covid19-05-04-20-u-s-analysis-visualization
+[COVID19 U.S. Analysis and Visualization](https://www.kaggle.com/ringhilterra17/covid19-05-04-20-u-s-analysis-visualization)
 
 ## Output Files
 - **covid19_us_county.csv:** contains all new yorks times COVID19 data over time per county, including per capita calculations, and population estimates
